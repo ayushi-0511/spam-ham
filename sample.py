@@ -22,4 +22,3 @@ def submit():
     return str(y_data)
 
 
-app.run(debug = True)
