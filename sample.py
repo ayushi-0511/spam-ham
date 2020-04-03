@@ -1,4 +1,4 @@
-from flask import Flask, templating, request
+from flask import Flask, templating, request , render_template
 import pickle
 
 with open("vect.pickle", "rb") as f:
@@ -20,3 +20,6 @@ def submit():
     y_data = nb.predict(x_data)
     print(y_data)
     return str(y_data)
+
+
+app.run(debug = True)
